@@ -2,10 +2,20 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
+body {
+  background-color: rgba(198, 199, 205, 0.753);
+}
+
+.contacts-section {
+  width: 80%;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
 .contact-icon {
   width: 60px;
   height: 60px;
   background-color: var(--main-color);
+  margin: auto;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -21,7 +31,6 @@
 
 .contacts-section h2 {
   font-size: 1.5rem;
-  color: gray;
 }
 .contacts-section #adresses p {
   font-size: 1.1rem;
@@ -29,3 +38,76 @@
 .contacts-section #adresses p span {
   font-weight: bold;
 }
+
+#adresses,
+#emailing,
+#calling {
+  padding: 2rem;
+  background-color: var(--main-white);
+  border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+.emaling-call {
+  text-align: center;
+}
+
+.emaling-calling ul {
+  list-style: none;
+  padding: 0;
+}
+
+.emaling-calling li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px 10px;
+}
+
+#emailing a {
+  text-decoration: none;
+}
+
+#emailing-calling {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .accueil-section {
+    padding-left: 14%;
+    padding-right: 10%;
+  }
+}
+
+/* @media screen and (min-width: 769px) {
+  .emaling-calling div {
+    justify-self: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 8px 6px;
+  }
+
+  .emaling-calling {
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px;
+    text-align: center;
+  }
+
+  .emaling-calling li:hover {
+    border: 3px solid var(--main-white);
+    cursor: pointer;
+  }
+
+  .emaling-calling li h2 {
+    width: 100%;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+  }
+
+} */
