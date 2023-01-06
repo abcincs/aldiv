@@ -11,24 +11,27 @@ body {
   margin: auto;
   font-family: "Lato", sans-serif;
 }
+
+/* Style the icon */
 .contact-icon {
   width: 60px;
   height: 60px;
   background-color: var(--main-color);
-  margin: auto;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
+/* Style the svg itself */
 .contact-icon svg {
   width: 30px;
   height: 30px;
-  display: inline-block;
   margin: auto;
   fill: white;
 }
 
+/* Addresses Section */
 .contacts-section h2 {
   font-size: 1.5rem;
 }
@@ -40,9 +43,10 @@ body {
 }
 
 .contacts-section #adresses {
-    margin: 0 0 20px;
+  margin: 0 0 20px;
 }
 
+/* Style for All 3 sections */
 #adresses,
 #emailing,
 #calling {
@@ -51,7 +55,13 @@ body {
   border-radius: 20px;
   text-align: center;
 }
+
+/* Style for Email and Call Section */
 #emailing-calling {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
   text-align: center;
 }
 
@@ -68,41 +78,14 @@ body {
   padding: 5px 10px;
 }
 
+/* Style for Email Section */
 #emailing a {
   text-decoration: none;
 }
 
-#emailing-calling {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-}
-
-/* @media screen and (min-width: 768px) {
-  .accueil-section {
-    padding-left: 14%;
-    padding-right: 10%;
-  }
-} */
-
+/* Support for screen size of 769px or wider */
 @media screen and (min-width: 769px) {
   #emailing-calling {
-    width: 100%;
-    /* margin: 0 auto; */
-    /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
-    /* grid-gap: 20px;
   }
-
-  /* #calling li:hover {
-    border: 3px solid var(--main-white);
-    cursor: pointer;
-  } */
-
-  /* #emailing-calling li h2 {
-    width: 100%;
-    padding: 10px 0;
-    flex-wrap: nowrap;
-  } */
 }
