@@ -1,0 +1,31 @@
+@import "colors.css";
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: auto;
+  fill: white;
+}
+
+.contacts-section h2 {
+  font-size: 1.5rem;
+  color: gray;
+}
+.contacts-section #adresses p {
+  font-size: 1.1rem;
+}
+.contacts-section #adresses p span {
+  font-weight: bold;
+}
