@@ -1,0 +1,65 @@
+@import url("../css/colors.css");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+/* Style the publication Container */
+.publications-section {
+  width: 80%;
+  margin: 30px auto;
+  font-family: "Lato", sans-serif;
+}
+
+.publications-section h1 {
+  color: var(--text-color);
+  /* font-weight: normal; */
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding: 62px;
+}
+
+.publications-section h1::after {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 14px auto 0;
+  background-color: var(--main-color);
+}
+
+/* Style different particular activities */
+.activity {
+  padding: 20px;
+  background-color: var(--yellow-background-1);
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.activity h4 {
+  font-size: x-large;
+  color: var(--main-color);
+  margin: 0;
+}
+.activity p {
+  color: gray;
+  font-size: larger;
+}
+.activity p::before {
+  content: "> ";
+}
+
+.act-5 h4::after {
+  content: "  ";
+  display: inline-block;
+  width: 80px;
+  height: 1.5px;
+  /* margin: 14px auto 0; */
+  background-color: red;
+}
+
+.act-5 ul {
+    font-size: larger;
+}
+
+.act-5 ul li {
+    padding: 10px 0;
+}
