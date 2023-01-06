@@ -31,9 +31,11 @@ function directMenu() {
   html.style.overflow = 'auto';
 }
 
+// When click to any link in the menu you are direct you to the right section.
 navLinks.forEach((link) => {
   link.addEventListener('click', directMenu);
 });
 
+// When click to the show menu button the menu appear and when user click to the close button the menu disappear.
 showBtn.addEventListener('click', showMenu);
 closeBtn.addEventListener('click', closeMenu);

@@ -219,6 +219,7 @@ const data = [
 
 const imageContainer = document.querySelector('#Galleries .images');
 
+// Function to create card with elements in the array
 function createCard(dataInfo) {
   const li = document.createElement('li');
   li.className = 'card-image d-flex';
@@ -240,6 +241,7 @@ const btnIcon = document.querySelector('#Galleries button i');
 
 let showless = false;
 
+// Function to display more or less data "images"
 function voirPlus() {
   if (!showless) {
     imageList.forEach((images) => {
@@ -265,5 +267,6 @@ function voirPlus() {
   }
 }
 
+// when user click to the "Voir Plus" button all images display and the button change to "Voir Moins" when user click to the "Voir Moins" button only six images display
 moreBtn.addEventListener('click', voirPlus);
   
