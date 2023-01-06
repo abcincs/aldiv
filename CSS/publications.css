@@ -4,8 +4,8 @@
 
 /* Style the publication Container */
 .publications-section {
-  width: 80%;
-  margin: 30px auto;
+  width: 1000%;
+  margin: 10px auto;
   font-family: "Lato", sans-serif;
 }
 
@@ -50,22 +50,50 @@
   padding: 0;
 }
 
-.activity p {
-    font-weight: 300;
+.activity p,
+.act-4 figcaption {
+  font-weight: 300;
 }
-.activity p::before {
+.activity p::before,
+.act-4 figcaption::before {
   content: "> ";
 }
 
-.act-1 img {
-    width: 100%;
+.activity img {
+  width: 100%;
+  background-color: black;
 }
 
-.act-1 #img-container {
+.activity > .img-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
   grid-gap: 15px;
+}
+
+/* Style activity 4 */
+.act-4 > img:first-of-type {
+  max-height: 500px;
+}
+
+.act-4 h5 {
+  font-size: large;
+  font-weight: normal;
+}
+
+.act-4 figure {
+  width: 100%;
+  margin: 0;
+}
+
+/* Style activity 5 */
+.act-5,
+.act-3 ul {
+  font-size: larger;
+}
+
+.act-5 ul li {
+  padding: 10px 0;
 }
 
 .act-5 h4::after {
@@ -76,23 +104,13 @@
   background-color: red;
 }
 
-.act-5 ul {
-  font-size: larger;
-}
-
-.act-5 ul li {
-  padding: 10px 0;
-}
-
-.act-2,
-.act-3,
-.act-4,
-.act-5 {
-  visibility: hidden;
-}
-
 @media screen and (min-width: 769px) {
-  .act-1 #img-container {
+  .publications-section {
+    width: 80%;
+    margin: 30px auto;
+    font-family: "Lato", sans-serif;
+  }
+  .activity > .img-container {
     grid-template-columns: 1fr 1fr;
   }
 }
