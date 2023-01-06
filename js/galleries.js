@@ -239,12 +239,12 @@ const moreBtn = document.querySelector('#Galleries button');
 const btnSpan = document.querySelector('#Galleries button span');
 const btnIcon = document.querySelector('#Galleries button i');
 
-let showless = false;
+let showlessImages = false;
 
 // Function to display more or less data "images"
 // when user click to the "Voir Plus" button all images display and the button change to "Voir Moins" when user click to the "Voir Moins" button only six images display
-function voirPlus() {
-  if (!showless) {
+function showmoreImages() {
+  if (!showlessImages) {
     imageList.forEach((images) => {
       images.style.display = 'flex';
     });
@@ -252,7 +252,7 @@ function voirPlus() {
     btnIcon.classList.remove('fa', 'fa-chevron-down');
     btnIcon.classList.add('fa', 'fa-chevron-up');
 
-    showless = true;
+    showlessImages = true;
   } else {
     imageList.forEach((images) => {
       images.style.display = 'none';
@@ -264,9 +264,9 @@ function voirPlus() {
     btnSpan.textContent = 'Voir Plus';
     btnIcon.classList.remove('fa', 'fa-chevron-up');
     btnIcon.classList.add('fa', 'fa-chevron-down');
-    showless = false;
+    showlessImages = false;
   }
 }
 
-moreBtn.addEventListener('click', voirPlus);
+moreBtn.addEventListener('click', showmoreImages);
   
