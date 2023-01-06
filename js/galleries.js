@@ -242,6 +242,7 @@ const btnIcon = document.querySelector('#Galleries button i');
 let showless = false;
 
 // Function to display more or less data "images"
+// when user click to the "Voir Plus" button all images display and the button change to "Voir Moins" when user click to the "Voir Moins" button only six images display
 function voirPlus() {
   if (!showless) {
     imageList.forEach((images) => {
@@ -267,6 +268,5 @@ function voirPlus() {
   }
 }
 
-// when user click to the "Voir Plus" button all images display and the button change to "Voir Moins" when user click to the "Voir Moins" button only six images display
 moreBtn.addEventListener('click', voirPlus);
   
