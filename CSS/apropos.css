@@ -49,6 +49,7 @@
   padding: 6px;
   background-color: #dadac4be;
   color: var(--main-black);
+  border-radius: 15px;
 }
 
 .objectifs-domaines li h3 {
