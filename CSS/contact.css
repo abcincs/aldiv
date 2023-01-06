@@ -35,6 +35,11 @@ body {
 .contacts-section h2 {
   font-size: 1.5rem;
 }
+
+.contacts-section #adresses {
+  margin: 0 0 20px;
+}
+
 .contacts-section #adresses p {
   font-size: 1.1rem;
 }
@@ -42,14 +47,11 @@ body {
   font-weight: bold;
 }
 
-.contacts-section #adresses {
-  margin: 0 0 20px;
-}
-
-/* Style for All 3 sections */
+/* GenralStyle for All 4 sections */
 #adresses,
 #emailing,
-#calling {
+#calling,
+#messaging {
   padding: 2rem;
   background-color: var(--main-white);
   border-radius: 20px;
@@ -88,4 +90,52 @@ body {
   #emailing-calling {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Style for messaging section */
+#messaging {
+  margin: 20px 0 0 0;
+}
+
+#messaging input {
+  height: 35px;
+  padding: 10px, 20px;
+}
+
+#messaging textarea {
+  resize: none;
+  height: 100px;
+}
+
+#messaging form label {
+  display: none;
+}
+
+/* Style inputs with type="text" and textarea */
+#messaging input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin: 0;
+}
+
+#messaging input[type="submit"] {
+  background-color: var(--main-color);
+  color: var(--main-white);
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+  transition: all 0.35s ease-in-out;
+}
+
+#messaging input[type="submit"]:hover {
+  background-color: blue;
 }
