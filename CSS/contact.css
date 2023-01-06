@@ -39,25 +39,29 @@ body {
   font-weight: bold;
 }
 
+.contacts-section #adresses {
+    margin: 0 0 20px;
+}
+
 #adresses,
 #emailing,
 #calling {
   padding: 2rem;
   background-color: var(--main-white);
   border-radius: 20px;
-  margin: 20px auto;
   text-align: center;
 }
-.emaling-call {
+#emailing-calling {
   text-align: center;
 }
 
-.emaling-calling ul {
+#emailing-calling ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.emaling-calling li {
+#emailing-calling li {
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -72,42 +76,33 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 14px;
+  grid-gap: 20px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .accueil-section {
     padding-left: 14%;
     padding-right: 10%;
   }
-}
+} */
 
-/* @media screen and (min-width: 769px) {
-  .emaling-calling div {
-    justify-self: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 16px 8px 6px;
-  }
-
-  .emaling-calling {
+@media screen and (min-width: 769px) {
+  #emailing-calling {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 7px;
-    text-align: center;
+    /* grid-gap: 20px;
   }
 
-  .emaling-calling li:hover {
+  /* #calling li:hover {
     border: 3px solid var(--main-white);
     cursor: pointer;
-  }
+  } */
 
-  .emaling-calling li h2 {
+  /* #emailing-calling li h2 {
     width: 100%;
     padding: 10px 0;
     flex-wrap: nowrap;
-  }
-
-} */
+  } */
+}
