@@ -11,10 +11,14 @@
 
 .publications-section h1 {
   color: var(--text-color);
-  /* font-weight: normal; */
   font-family: "Lato", sans-serif;
   text-align: center;
-  padding: 62px;
+}
+
+.publications-section h2 span {
+    margin: 0;
+    font-weight: normal;
+    color: var(--main-color);
 }
 
 .publications-section h1::after {
@@ -26,6 +30,9 @@
   background-color: var(--main-color);
 }
 
+hr {
+    margin: 5px auto;
+}
 /* Style different particular activities */
 .activity {
   padding: 20px;
@@ -42,6 +49,7 @@
 .activity p {
   color: gray;
   font-size: larger;
+  padding: 10px 0;
 }
 
 .activity img {
@@ -79,6 +87,7 @@
 .act-4 h5 {
   font-size: large;
   font-weight: normal;
+  margin: 10px 0;
 }
 
 .act-4 figure {
@@ -90,6 +99,12 @@
 .act-5,
 .act-3 ul {
   font-size: larger;
+  list-style: disc;
+}
+
+.activity ul {
+    list-style: disc;
+    margin: 20px;
 }
 
 .act-5 ul li {
