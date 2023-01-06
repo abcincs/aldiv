@@ -238,10 +238,10 @@ const moreBtn = document.querySelector('#Galleries button');
 const btnSpan = document.querySelector('#Galleries button span');
 const btnIcon = document.querySelector('#Galleries button i');
 
-let state = false;
+let showless = false;
 
 function voirPlus() {
-  if (!state) {
+  if (!showless) {
     imageList.forEach((images) => {
       images.style.display = 'flex';
     });
@@ -249,22 +249,19 @@ function voirPlus() {
     btnIcon.classList.remove('fa', 'fa-chevron-down');
     btnIcon.classList.add('fa', 'fa-chevron-up');
 
-    state = true;
+    showless = true;
   } else {
     imageList.forEach((images) => {
       images.style.display = 'none';
     });
-    imageList[0].style.display = 'flex';
-    imageList[1].style.display = 'flex';
-    imageList[2].style.display = 'flex';
-    imageList[3].style.display = 'flex';
-    imageList[4].style.display = 'flex';
-    imageList[5].style.display = 'flex';
+    for (let i = 0; i <= 5; i++) {
+        imageList[i].style.display = 'flex';
+    }
 
     btnSpan.textContent = 'Voir Plus';
     btnIcon.classList.remove('fa', 'fa-chevron-up');
     btnIcon.classList.add('fa', 'fa-chevron-down');
-    state = false;
+    showless = false;
   }
 }
 
