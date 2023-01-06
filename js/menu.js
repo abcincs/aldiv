@@ -4,6 +4,7 @@ const closeBtn = document.querySelector('nav .close-menu-btn');
 const navMenu = document.querySelector('nav .nav-menu');
 const navLinks = document.querySelectorAll('nav .nav-menu li');
 
+// Function to show the menu, when click to the button the menu is open
 function showMenu() {
   navMenu.classList.add('open');
   navMenu.classList.remove('hide');
@@ -13,6 +14,7 @@ function showMenu() {
   html.style.overflow = 'hidden';
 }
 
+// Function to close the menu, When click to the cross button the menu closed
 function closeMenu() {
   navMenu.classList.remove('open');
   navMenu.classList.add('hide');
@@ -22,6 +24,7 @@ function closeMenu() {
   html.style.overflow = 'auto';
 }
 
+// Function to direct user to the right path when click to any link in the menu.
 function directMenu() {
   navMenu.classList.remove('open');
   closeBtn.style.display = 'none';
