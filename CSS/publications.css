@@ -37,14 +37,35 @@
 .activity h4 {
   font-size: x-large;
   color: var(--main-color);
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 .activity p {
   color: gray;
   font-size: larger;
 }
+
+.activity img {
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.activity p {
+    font-weight: 300;
+}
 .activity p::before {
   content: "> ";
+}
+
+.act-1 img {
+    width: 100%;
+}
+
+.act-1 #img-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  grid-gap: 15px;
 }
 
 .act-5 h4::after {
@@ -52,14 +73,26 @@
   display: inline-block;
   width: 80px;
   height: 1.5px;
-  /* margin: 14px auto 0; */
   background-color: red;
 }
 
 .act-5 ul {
-    font-size: larger;
+  font-size: larger;
 }
 
 .act-5 ul li {
-    padding: 10px 0;
+  padding: 10px 0;
+}
+
+.act-2,
+.act-3,
+.act-4,
+.act-5 {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 769px) {
+  .act-1 #img-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
