@@ -1,0 +1,109 @@
+@import "colors.css";
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+.apropos-section {
+  width: 100%;
+  background-color: rgba(198, 199, 205, 0.753);
+  font-family: 'Lato', sans-serif;
+}
+
+.historique h2 {
+  text-align: center;
+  color: var(--main-black);
+  margin: 50px 0 5px;
+}
+
+.historique h2::after {
+  content: " ";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 14px auto 0;
+  background-color: var(--main-yellow);
+}
+
+.historique p {
+  text-align: justify;
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  line-height: 30px;
+  color: var(--main-black);
+}
+
+.apropos-section .objectifs-domaines {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 14px;
+}
+
+.objectifs-domaines li {
+  width: 97%;
+  min-height: 110px;
+  justify-self: center;
+  justify-content: space-around;
+  padding: 6px;
+  background-color: #dadac4be;
+  color: var(--main-black);
+}
+
+.objectifs-domaines li h3 {
+    width: 100%;
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 6px;
+    flex-wrap: wrap;
+}
+
+.objectifs-domaines li p {
+    width: 100%;
+    color: var(--main-black);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+@media screen and (min-width: 768px) {
+      .accueil-section {
+        padding-left: 14%;
+        padding-right: 10%;
+      }
+  }
+  
+@media screen and (min-width: 769px) {
+    .objectifs-domaines li {
+        justify-self: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 16px 8px 6px;
+    }
+
+    .apropos-section .objectifs-domaines {
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 7px;
+        text-align: center;
+    }
+
+    .objectifs-domaines li:hover {
+        border: 3px solid var(--main-white);
+        cursor: pointer;
+      }
+
+    .objectifs-domaines li h3 {
+        width: 100%;
+        padding: 10px 0;
+        flex-wrap: nowrap;
+    }
+
+    .objectifs-domaines li p {
+        width: 100%;
+        text-align: justify;
+    }
+}
