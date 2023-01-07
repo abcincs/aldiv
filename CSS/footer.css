@@ -1,0 +1,120 @@
+@import url("../css/colors.css");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+footer {
+  background-color: #071527;
+  font-family: "Lato", sans-serif;
+  color: var(--main-white);
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: large;
+  line-height: 30px;
+}
+
+#footer {
+  width: 80%;
+  margin: auto;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+}
+
+#socials {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#socials h1 {
+  margin: 15px 0;
+}
+
+#socials ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+#socials ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 5px;
+}
+
+#socials ul li a {
+  display: block;
+}
+
+#socials ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 40px; /* vertically center the icon within the square */
+  background-color: rgba(255, 166, 0, 0.5);
+  color: var(--main-white);
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+}
+
+#socials ul li a:hover {
+  background-color: var(--main-color);
+}
+
+#links {
+  padding: 0 30px;
+}
+
+#links h2 {
+  margin: 0;
+}
+
+#links ul {
+  list-style: none;
+  padding: 0;
+  column-count: 2;
+}
+
+#links ul li {
+  margin: 10px auto;
+}
+
+#links ul a,
+footer p a {
+  text-decoration: underline;
+  color: var(--main-white);
+  font-size: large;
+  transition: color 0.5s ease;
+}
+
+#links ul a:hover,
+footer p a:hover {
+  color: var(--main-color);
+}
+
+footer hr {
+  height: 1px;
+  background-color: gray;
+  border: none;
+}
+#links li::before {
+  content: "> ";
+  color: orange;
+  font-weight: bold;
+  font-size: larger;
+}
+
+@media screen and (min-width: 769px) {
+  #footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
