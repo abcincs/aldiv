@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
+/* Style Footer Section */
 footer {
   background-color: #071527;
   font-family: "Lato", sans-serif;
@@ -15,17 +16,22 @@ footer p {
   line-height: 30px;
 }
 
-#footer {
-  width: 80%;
-  margin: auto;
+footer hr {
+  height: 1px;
+  background-color: gray;
+  border: none;
 }
 
-#footer {
+/* Style socials and links container */
+#socials-links {
+  width: 100%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 15px;
 }
 
+/* Style Socials container */
 #socials {
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -51,9 +57,6 @@ footer p {
 
 #socials ul li a {
   display: block;
-}
-
-#socials ul li a {
   width: 40px;
   height: 40px;
   background-color: red;
@@ -70,6 +73,7 @@ footer p {
   background-color: var(--main-color);
 }
 
+/* Style Links container */
 #links {
   padding: 0 30px;
 }
@@ -88,6 +92,14 @@ footer p {
   margin: 10px auto;
 }
 
+#links li::before {
+  content: "> ";
+  color: orange;
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* Common Styling */
 #links ul a,
 footer p a {
   text-decoration: underline;
@@ -101,20 +113,9 @@ footer p a:hover {
   color: var(--main-color);
 }
 
-footer hr {
-  height: 1px;
-  background-color: gray;
-  border: none;
-}
-#links li::before {
-  content: "> ";
-  color: orange;
-  font-weight: bold;
-  font-size: larger;
-}
-
 @media screen and (min-width: 769px) {
-  #footer {
+  #socials-links {
+    width: 80%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
