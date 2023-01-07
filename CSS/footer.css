@@ -4,7 +4,7 @@
 
 /* Style Footer Section */
 footer {
-  background-color: #071527;
+  background-color: var(--footer-bg);
   font-family: "Lato", sans-serif;
   color: var(--main-white);
   padding: 20px;
@@ -20,6 +20,7 @@ footer hr {
   height: 1px;
   background-color: gray;
   border: none;
+  margin: 20px auto;
 }
 
 /* Style socials and links container */
@@ -59,8 +60,6 @@ footer hr {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: red;
-  color: white;
   text-align: center;
   line-height: 40px; /* vertically center the icon within the square */
   background-color: rgba(255, 166, 0, 0.5);
@@ -94,7 +93,7 @@ footer hr {
 
 #links li::before {
   content: "> ";
-  color: orange;
+  color: var(--main-orange);
   font-weight: bold;
   font-size: larger;
 }
