@@ -1,9 +1,8 @@
 :root {
   --main-color: rgba(1, 50, 255, 1);
-  --main-yellow: rgba(255, 239, 3, 1);
-  --yellow-background-1: rgba(244, 236, 194, 0.5);
   --main-black: rgba(0, 0, 0, 1);
   --main-white: rgba(255, 255, 255, 1);
   --main-orange: rgba(255, 165, 0, 1);
   --footer-bg: #071527;
+  --activity-bg: #f9fafc;
 }

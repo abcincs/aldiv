@@ -40,10 +40,7 @@ hr {
 /* Style different particular activities */
 .activity {
   padding: 20px;
-  background-color: var(--yellow-background-1);
-  background-color: rgba(255, 218, 182, 0.2);
-  background-color: #eff4f7;
-  background-color: #f9fafc;
+  background-color: var(--activity-bg);
   border-radius: 20px;
   margin: 20px 0;
 }

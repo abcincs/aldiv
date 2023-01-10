@@ -21,7 +21,6 @@ p {
 
 .main-title {
   font-size: 30px;
-  font-weight: bolder;
   text-align: center;
 }
 .main-title::after {
