@@ -15,6 +15,24 @@ html {
   margin: 0;
 }
 
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+.main-title::after {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 14px auto 0;
+  background-color: var(--main-color);
+}
+
 ul {
   list-style: none;
 }
@@ -52,7 +70,7 @@ header .media {
   background-color: #d3d3d3f2;
 }
 
-.Hamburger .show-menu-btn {
+.hamburger .show-menu-btn {
   position: fixed;
   top: 24px;
   left: 24px;
@@ -61,7 +79,7 @@ header .media {
   z-index: 2;
 }
 
-.Hamburger .close-menu-btn {
+.hamburger .close-menu-btn {
   display: none;
   position: fixed;
   top: 36px;
@@ -146,6 +164,8 @@ main {
   font-family: inherit;
 }
 
+/* Accueil Styling */
+
 .accueil-section {
   padding: 80px 24px 30px;
   background-color: var(--main-white);
@@ -161,10 +181,11 @@ main {
 
 .title-accueil-section {
   color: var(--main-color);
+  text-align: center;
 }
 
 .title-accueil-section h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 60px;
   color: var(--main-color);
@@ -182,12 +203,12 @@ main {
   font-weight: 500;
   line-height: 52px;
   padding: 55px 50px;
-  text-align: center;
 }
 
-
 .title-accueil-section p {
-  text-align: end;
+  font-size: 25px;
+  line-height: 50px;
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -228,11 +249,11 @@ main {
     color: var(--main-color);
   }
 
-  .Hamburger .show-menu-btn {
+  .hamburger .show-menu-btn {
     display: none;
   }
 
-  header .Hamburger {
+  header .hamburger {
     position: fixed;
     top: 22px;
     left: 0;
@@ -277,23 +298,17 @@ main {
   }
 
   .accueil-section {
-    padding-top: calc(170px + 92px);
+    padding-top: calc(120px + 92px);
+    padding-bottom: 120px;
   }
-
+  
   .title-accueil-section h2 {
     font-size: 45px;
     font-weight: 400;
     line-height: 50px;
-    text-align: center;
   }
 
   .title-accueil-section h1 {
-    font-size: 40px;
-    line-height: 75px;
-  }
-
-  .title-accueil-section p {
-    font-size: 17px;
-    text-align: end;
+    font-size: 50px;
   }
 }
