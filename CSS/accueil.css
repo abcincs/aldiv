@@ -2,6 +2,9 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
+/* 
+//////////// General Styling  ////////////
+ */
 html {
   scroll-behavior: smooth;
 }
@@ -160,14 +163,6 @@ main {
   color: var(--main-color);
 }
 
-.title-accueil-section h2 {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 52px;
-  padding: 55px 50px;
-  text-align: center;
-}
-
 .title-accueil-section h1 {
   font-size: 30px;
   font-weight: 400;
@@ -181,6 +176,15 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.title-accueil-section h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  padding: 55px 50px;
+  text-align: center;
+}
+
 
 .title-accueil-section p {
   text-align: end;
