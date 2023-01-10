@@ -2,35 +2,20 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
-
 .galleries-section {
   width: 100%;
   background-color: var(--main-white);
-  background-image: linear-gradient(
-      rgba(217, 214, 214, 0.828),
-      rgba(235, 235, 235, 0.884)
-    ),
-    url("../images/galleries/gallery-8.png");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: radial-gradient(circle at center, #d2c3a7, #f4e2e2);
 }
 
-.galleries-section h2 {
+.galleries-section h1 {
+  padding: 32px;
+}
+
+.galleries-section h1 {
   color: var(--text-color);
-  font-weight: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
-  padding: 62px;
-}
-
-.galleries-section h2::after {
-  content: " ";
-  display: block;
-  width: 48px;
-  height: 3px;
-  margin: 14px auto 0;
-  background-color: var(--main-color);
 }
 
 .galleries-section .images {
@@ -51,18 +36,18 @@
 .voir-plus button {
   padding: 14px 60px;
   font-size: 15px;
+  font-weight: 300;
   color: var(--main-color);
   background-color: var(--main-white);
-  border: 1px solid var(--main-black);
+  border: 1px solid var(--main-color);
   border-radius: 10px;
+  transition: background-color 0.5s ease;
 }
-
 .voir-plus button i {
-  color: var(--main-color);
+  transition: none;
 }
 
-.voir-plus button:hover,
-.voir-plus button:hover i {
+.voir-plus button:hover {
   color: var(--main-white);
   background-color: var(--main-color);
 }
@@ -91,8 +76,8 @@ li .card-img {
 li .card-img img {
   width: 100%;
   height: auto;
-  border: 2px solid var(--main-color);
-  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 478px) {

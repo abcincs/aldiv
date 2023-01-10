@@ -10,7 +10,7 @@ body {
   margin: 40px auto;
 }
 .contacts-section {
-  width: 80%;
+  width: 70%;
   margin: auto;
   font-family: "Lato", sans-serif;
 }
@@ -37,6 +37,7 @@ body {
 /* Addresses Section */
 .contacts-section h2 {
   font-size: 1.5rem;
+  margin: 8px 0;
 }
 
 .contacts-section #adresses {
