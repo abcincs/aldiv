@@ -128,7 +128,6 @@ textarea {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  overflow-x: visible;
   margin: 20px 0 20px 0;
   padding: 12px;
   transition: all 0.35s ease-in-out;
@@ -136,11 +135,6 @@ textarea {
 
 #messaging .submit-btn[type="submit"]:hover {
   background-color: blue;
-}
-
-#messaging form {
-  overflow-x: visible;
-  margin: 20px 0;
 }
 
 /* Support for screen size of 769px or wider */

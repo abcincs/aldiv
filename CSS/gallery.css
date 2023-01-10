@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
+
 .galleries-section {
   width: 100%;
   background-color: var(--main-white);
@@ -37,12 +38,14 @@
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
+  padding: 0;
 }
 
 .galleries-section .voir-plus {
   width: 100%;
   text-align: center;
   margin: 20px auto 50px;
+  padding-bottom: 1.5rem;
 }
 
 .voir-plus button {
@@ -80,8 +83,9 @@
 }
 
 li .card-img {
-  width: 185px;
+  width: 170px;
   flex-shrink: 0;
+  padding-right: 0.3rem;
 }
 
 li .card-img img {
@@ -93,14 +97,14 @@ li .card-img img {
 
 @media screen and (min-width: 478px) {
   li .card-img {
-    width: 230px;
+    width: 210px;
     flex-shrink: 0;
   }
 }
 
 @media screen and (min-width: 619px) {
   li .card-img {
-    width: 300px;
+    width: 290px;
     flex-shrink: 0;
   }
 }
@@ -110,25 +114,26 @@ li .card-img img {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
-    padding: 0 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
 }
 
 @media screen and (min-width: 769px) {
-  .galleries-section h2 {
-    padding: 62px;
-  }
 
   .galleries-section .images {
     width: 100%;
     max-width: 950px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
+  }
+  
+  .galleries-section h2 {
+    padding: 62px;
   }
 
   li .card-img {
+    width: 240px;
     flex-shrink: 1;
   }
 
@@ -136,5 +141,15 @@ li .card-img img {
   .images li:nth-child(2),
   .images li:nth-child(3) {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .galleries-section .images {
+    padding-right: 3rem;
+  }
+  li .card-img {
+    width: 330px;
+    flex-shrink: 1;
   }
 }

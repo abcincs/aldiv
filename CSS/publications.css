@@ -7,7 +7,6 @@
   width: 100%;
   margin: 10px auto;
   font-family: "Lato", sans-serif;
-  overflow-x: visible;
 }
 
 .publications-section h1 {
@@ -101,21 +100,20 @@ hr {
 }
 
 /* Style activity 5 */
-.act-3 ul li {
-  padding: 3px 0;
+.act-5,
+.act-3 ul {
   font-size: larger;
-  list-style: square inside url("sqpurple.gif");
+  list-style: disc;
 
 }
 
 .activity ul {
+  list-style: disc;
   margin: 20px;
 }
 
 .act-5 ul li {
-  padding: 8px 0;
-  font-size: larger;
-  list-style: square inside url("sqpurple.gif");
+  padding: 10px 0;
 }
 
 .act-5 h4::after {

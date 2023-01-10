@@ -4,6 +4,7 @@
 
 .apropos-section {
   width: 100%;
+  padding: 30px 10px 15px;
   background-color: rgba(198, 199, 205, 0.53);
   font-family: 'Lato', sans-serif;
 }
@@ -11,7 +12,6 @@
 .historique h2 {
   text-align: center;
   color: var(--main-black);
-  margin: 50px 0 5px;
 }
 
 .historique h2::after {
