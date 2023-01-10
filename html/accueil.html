@@ -44,7 +44,7 @@
                 <ul class="nav-menu d-flex">
                     <li class="nav-menu-link"><a href="#Accueil">Accueil</a></li>
                     <li class="nav-menu-link"><a href="#APropos">A Propos</a></li>
-                    <li class="nav-menu-link"><a href="#Galleries">Publication</a></li>
+                    <li class="nav-menu-link"><a href="#Publications">Publication</a></li>
                     <li class="nav-menu-link"><a href="#Galleries">Galleries</a></li>
                     <li class="nav-menu-link"><a href="#Contacts">Contacts</a></li>
                 </ul>
@@ -65,15 +65,15 @@
                 <h2>HISTORIQUE DE SA CREATION</h2>
                 <p>ALDIV Asbl a été créée à Goma en RD Congo le 13/03/2020.
                    En effet, pendant plus de deux décennies, les conflits armés en vogue à l’Est de la RD Congo 
-                   ont profondément  affecté et détruit les tissus socioéconomiques  et culturels des populations 
+                   ont profondément affecté et détruit les tissus socioéconomiques et culturels des populations 
                    vivant dans cette partie du pays avec leur cortège de malheurs notamment les déplacements 
                    massifs des populations, les conflits intercommunautaires cause de haine, de méfiance, 
                    de discrimination et de violences sous multiples formes occasionnant ainsi une situation 
-                   de nature  à ne pas favoriser la cohésion et l’harmonie sociales. C’est donc dans ce contexte 
+                   de nature à ne pas favoriser la cohésion et l’harmonie sociales. C’est donc dans ce contexte 
                    complexe qu’est née ALDIV afin d’apporter sa contribution dans les stratégies, programmes 
                    ou actions visant la normalisation de la situation, de recréer un climat de paix, de stabilité 
                    socioéconomique facteur du développement dans cette Zone au profit des communautés affectées par 
-                   les affres de la guerre.  Régie par la loi congolaise, Aldiv est une organisation humanitaire, 
+                   les affres de la guerre. Régie par la loi congolaise, Aldiv est une organisation humanitaire, 
                    apolitique, non confessionnelle, respectueuse des principes fondamentaux du droit humanitaire.
                 </p>
             </div>
@@ -81,11 +81,11 @@
                 <li>
                     <h3 class="objectifs d-flex flex-center">OBJECTIFS</h3>
                     <p>· Protéger les catégories vulnérables marginalisées dont les femmes et les enfants, les vieillards, les orphelins, les albinos, les personnes vivant avec handicap, les peuples autochtones;</br>
-                       · Education et leadership (renforcer les capacités des autorités locales et autres leaders communautaires sur le respect des droits humains, la cohabitation et la résolution pacifique des conflits, le relèvement communautaire, autonomisation de la femme,…);</br>
+                       · Education et leadership (renforcer les capacités des autorités locales et autres leaders communautaires sur le respect des droits humains, la cohabitation et la résolution pacifique des conflits,le relèvement communautaire, autonomisation de la femme,…);</br>
                        · Lutte contre le réchauffement climatique (reboisement, entrepreneuriat);</br>
                        · Eau, hygiène et assainissement (accompagner la communauté dans la lutte contre les maladies hydriques, les MST/IST);</br>
                        · Accompagner la communauté dans les actions de la sécurité alimentaire;</br>
-                       · Sensibiliser la communauté sur le genre et  l ’autonomisation de la femme.
+                       · Sensibiliser la communauté sur le genre et l ’autonomisation de la femme.
                     </p>
                 </li>
                 <li>
@@ -280,22 +280,22 @@
             </div>
 
             <div id="messaging"> 
-                <form action="">
-                    <form>
-                        <div class="horizontal-fields">
-                            <label for="name">Name:</label><br>
-                            <input type="text" id="name" placeholder="Votre nom.." name="Nom"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="text" id="email" placeholder="Votre Email.." name="Email"><br>
-                        </div>
-                        <label for="subject">Sujet:</label><br>
-                        <input type="text" id="subject" placeholder="Suject" name="Sujet"><br>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" placeholder="Ecrivez quelque chose" name="Message"></textarea><br>
-                        <input type="submit" value="Envoyer le message">
-                      </form> 
-                </form>
-            </div>    
+              <form action="https://formspree.io/f/xgeberyo" method="post" id="form">
+                <div class="horizontal-fields">
+                  <label for="name" required>Name:</label><br>
+                  <input type="text" id="name" placeholder="Votre nom.." name="Nom" required><br>
+                  <label for="email" required>Email:</label><br>
+                  <input type="text" id="email" placeholder="Votre Email.." name="Email" required><br>
+                </div>
+                <label for="subject" required>Sujet:</label><br>
+                <input type="text" id="subject" placeholder="Suject" name="Sujet" required><br>
+                <label for="message" required>Message:</label><br>
+                <textarea id="message" placeholder="Ecrivez quelque chose" name="Message" required></textarea><br>
+                <button class="submit-btn" type="submit" value="Envoyer le message" class="submit-btn">
+                  Envoyer le message
+                </button>
+              </form>
+            </div>
         </section>
     </main>
     <footer>
@@ -337,5 +337,6 @@
     </footer>
     <script src="../js/galleries.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/validation.js"></script>
 </body>
 </html>

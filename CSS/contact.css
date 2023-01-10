@@ -7,7 +7,7 @@ body {
 }
 
 #Contacts {
-    margin: 40px auto;
+  margin: 40px auto;
 }
 .contacts-section {
   width: 80%;
@@ -120,7 +120,7 @@ textarea {
   margin: 0;
 }
 
-#messaging input[type="submit"] {
+#messaging .submit-btn[type="submit"] {
   background-color: var(--main-color);
   color: var(--main-white);
   width: 150px;
@@ -128,11 +128,12 @@ textarea {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
+  padding: 12px;
   transition: all 0.35s ease-in-out;
 }
 
-#messaging input[type="submit"]:hover {
+#messaging .submit-btn[type="submit"]:hover {
   background-color: blue;
 }
 

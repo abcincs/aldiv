@@ -29,7 +29,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "COCOGOOSE", sans-serif;
-  overflow-x: hidden;
 }
 
 header {
@@ -145,7 +144,7 @@ main {
 }
 
 .accueil-section {
-  padding: 80px 24px 0;
+  padding: 80px 24px 30px;
   background-color: var(--main-white);
   background-image: linear-gradient(
       rgba(217, 214, 214, 0.828),
@@ -159,7 +158,6 @@ main {
 
 .title-accueil-section {
   color: var(--main-color);
-  margin-bottom: 2rem;
 }
 
 .title-accueil-section h2 {

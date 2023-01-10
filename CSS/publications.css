@@ -15,10 +15,14 @@
   text-align: center;
 }
 
+.publications-section h2 {
+  margin-left: 20px;
+}
+
 .publications-section h2 span {
-    margin: 0;
-    font-weight: normal;
-    color: var(--main-color);
+  margin: 0;
+  font-weight: normal;
+  color: var(--main-color);
 }
 
 .publications-section h1::after {
@@ -31,7 +35,7 @@
 }
 
 hr {
-    margin: 5px auto;
+  margin: 5px auto;
 }
 /* Style different particular activities */
 .activity {
@@ -100,11 +104,12 @@ hr {
 .act-3 ul {
   font-size: larger;
   list-style: disc;
+
 }
 
 .activity ul {
-    list-style: disc;
-    margin: 20px;
+  list-style: disc;
+  margin: 20px;
 }
 
 .act-5 ul li {
