@@ -6,15 +6,12 @@
   width: 100%;
   padding: 30px 10px 15px;
   margin: auto;
-  /* background-color: rgba(198, 199, 205, 0.53); */
-  /* background-color: red; */
   background-color: #e0e9f0;
   font-family: 'Lato', sans-serif;
 }
 .apropos-section .container {
-  width: 80%;
-  margin: auto;
-  
+  width: 70%;
+  margin: auto; 
 }
 
 .historique h2::after {
@@ -84,7 +81,7 @@
 
 @media screen and (min-width: 769px) {
   .apropos-section .container {
-    width: 80%;
+    width: 70%;
   }
   .objectifs-domaines li {
     justify-self: center;
