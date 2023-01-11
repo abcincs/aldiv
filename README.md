@@ -24,7 +24,9 @@ A step by step series of examples that tell you how to get a development env run
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system.
+
+The project is also hosted on `Netflify` under [aldivrdc.netlify.app](https://aldivrdc.netlify.app/)
 
 ## Contributing
 
