@@ -110,6 +110,10 @@ hr {
   margin: 20px;
 }
 
+.activity ul li span {
+  font-weight: bold;
+}
+
 .act-5 ul li {
   padding: 10px 0;
 }

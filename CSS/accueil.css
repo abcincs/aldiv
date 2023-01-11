@@ -22,6 +22,7 @@ p {
 .main-title {
   font-size: 30px;
   text-align: center;
+  color: var(--h1-color);
 }
 .main-title::after {
   content: " ";
@@ -208,6 +209,7 @@ main {
   font-size: 25px;
   line-height: 30px;
   padding-top: 20px;
+  color: var(--devise-color);
 }
 
 @media screen and (min-width: 768px) {

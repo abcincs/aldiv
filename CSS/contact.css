@@ -86,8 +86,9 @@ body {
 }
 
 /* Style for Email Section */
-#emailing a {
+#emailing-calling a {
   text-decoration: none;
+  color: var(--main-color);
 }
 
 /* Style for messaging section */
@@ -97,7 +98,6 @@ body {
 
 #messaging input {
   height: 35px;
-  padding: 10px, 20px;
 }
 
 #messaging textarea {
@@ -130,7 +130,7 @@ textarea {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0 20px 0;
+  margin-top: 20px;
   padding: 12px;
   transition: all 0.35s ease-in-out;
 }
