@@ -15,21 +15,21 @@ alertMsg.style.textShadow = "1px 1px 5px #f15656";
 alertMsg.style.padding = "15px";
 alertMsg.style.visibility = "hidden";
 
-// When click to the submit button, if the email is in lowercase the form is submit if not the error message show bellow the button
+// When click to the submit button, if the email is in lowercase the form is submitted if not the error message show bellow the button
 form.addEventListener("submit", (e) => {
   // If the email is not in lowercase the alert message appear
   if (email.value !== email.value.toLowerCase()) {
     alertMsg.style.visibility = "visible";
     email.style.boxShadow = "1px 1px 10px #d60303";
 
-    // The time that the alert message will be visible, after this time the message dissapear again
+    // The time that the alert message will be visible, after this time the message disappear again
     setTimeout(() => {
       alertMsg.style.visibility = "hidden";
       email.style.boxShadow = "none";
     }, 10000);
     e.preventDefault();
 
-    // If the email is in lowercase the form is submit
+    // If the email is in lowercase the form is submitted
   } else {
     alertMsg.style.visibility = "hidden";
     email.style.border = "1px solid #808080";
