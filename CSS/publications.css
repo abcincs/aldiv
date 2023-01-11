@@ -10,9 +10,7 @@
 }
 
 .publications-section h1 {
-  color: var(--text-color);
-  font-family: "Lato", sans-serif;
-  text-align: center;
+  margin: 10px 0;
 }
 
 .publications-section h2 {
@@ -110,6 +108,10 @@ hr {
 .activity ul {
   list-style: disc;
   margin: 20px;
+}
+
+.activity ul li span {
+  font-weight: bold;
 }
 
 .act-5 ul li {

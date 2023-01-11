@@ -10,7 +10,7 @@
   font-family: 'Lato', sans-serif;
 }
 .apropos-section .container {
-  width: 70%;
+  width: 95%;
   margin: auto; 
 }
 
@@ -25,14 +25,12 @@
 }
 
 .historique p {
-  text-align: justify;
-  padding: 30px;
-  margin: 20px 0;
   font-size: 1.1rem;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
+  text-align: justify;
   line-height: 30px;
-  color: var(--main-black);
+  margin: 15px 0;
 }
 
 .apropos-section .objectifs-domaines {
