@@ -10,9 +10,7 @@
 }
 
 .publications-section h1 {
-  color: var(--text-color);
-  font-family: "Lato", sans-serif;
-  text-align: center;
+  margin: 10px 0;
 }
 
 .publications-section h2 {
