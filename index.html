@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aldiv est une association pour la lutte contre la discrimination et la violence. ALDIV Asbl a été créée à Goma à l’Est de la RD Congo où se trouve son siège social.">
-    <link
-      rel="shortcut icon"
-      href="/images/icons/aldiv-logo.jpeg"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/accueil.css" />
-    <link rel="stylesheet" href="css/apropos.css" />
-    <link rel="stylesheet" href="css/gallery.css" />
-    <link rel="stylesheet" href="css/publications.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <meta name="keywords" content="ALDIV, discrimination, violence, association, RD Congo, humanitaire, droits humains, Goma, Sud-Kivu, Nord-Kivu, développement, ONG">
+  <link rel="canonical" href="https://aldiv.vercel.app/">
+  <link rel="icon" href="/images/icons/aldiv-logo.jpeg" sizes="32x32" type="image/jpeg">
+  <link rel="icon" href="/images/icons/aldiv-logo.jpeg" sizes="192x192" type="image/jpeg">
+  <link rel="apple-touch-icon" href="/images/icons/aldiv-logo.jpeg">
+  <meta property="og:title" content="ALDIV ASBL - Association pour la Lutte contre la Discrimination et la Violence">
+  <meta property="og:description" content="Aldiv est une association humanitaire basée à Goma, RD Congo, œuvrant pour la lutte contre la discrimination et la violence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aldiv.vercel.app/">
+  <meta property="og:image" content="https://aldiv.vercel.app/images/icons/aldiv-logo.jpeg">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ALDIV ASBL - Association pour la Lutte contre la Discrimination et la Violence">
+  <meta name="twitter:description" content="Aldiv est une association humanitaire basée à Goma, RD Congo, œuvrant pour la lutte contre la discrimination et la violence.">
+  <meta name="twitter:image" content="https://aldiv.vercel.app/images/icons/aldiv-logo.jpeg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>ALDIV ASBL</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ALDIV ASBL",
+        "url": "https://aldiv.vercel.app/",
+        "logo": "https://aldiv.vercel.app/images/icons/aldiv-logo.jpeg",
+        "description": "Association pour la Lutte contre la Discrimination et la Violence à Goma, RD Congo.",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "email": "aldiv.rdc20@gmail.com",
+          "contactType": "customer support",
+          "telephone": "+243990188046"
+        }],
+        "sameAs": [
+          "https://www.facebook.com/Aldivasbl",
+          "https://twitter.com/AldivAsbl",
+          "https://instagram.com/aldiv.rdc"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -37,9 +60,6 @@
             ></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-          </li>
-          <li>
             <a href="https://instagram.com/aldiv.rdc" target="_blank"
               ><i class="fa fa-instagram"></i
             ></a>
@@ -52,7 +72,7 @@
           <i class="fa fa-times close-menu-btn"></i>
           <div class="logo active">
             <a href="#Accueil">
-              <img src="/images/icons/logo-transparent.png" alt="logo" />
+              <img src="/images/icons/logo-transparent.png" alt="Logo transparent ALDIV ASBL, association humanitaire à Goma, RD Congo" />
             </a>
           </div>
           <ul class="nav-menu d-flex">
@@ -69,19 +89,18 @@
     </header>
     <main>
       <section id="Accueil" class="accueil-section">
-        <div class="title-accueil-section">
+        <div class="title-accueil-section modern-hero">
           <h2>ALDIV asbl</h2>
-          <h1>
-            ASSOCIATION POUR LA LUTTE CONTRE LA DISCRIMINATION ET LA VIOLENCE
-          </h1>
-          <p>Devise: HUMANISME-JUSTICE-DEVELOPMENT</p>
+          <h1>Association pour la Lutte contre la Discrimination et la Violence</h1>
+          <p class="hero-mission">Humanisme &nbsp;|&nbsp; Justice &nbsp;|&nbsp; Développement</p>
+          <a href="#Contacts" class="cta-btn">Rejoignez-nous</a>
         </div>
       </section>
 
       <section id="APropos" class="apropos-section">
         <div class="container">
           <div class="historique">
-            <h1 class="main-title">Historique de sa création</h1>
+            <h2 class="main-title">Historique de sa création</h2>
             <p>
               ALDIV Asbl a été créée à Goma à l’Est de la RD Congo où se
               trouve son siège social. En effet, pendant plus de deux décennies,
@@ -145,14 +164,14 @@
       </section>
 
       <section id="Publications" class="publications-section">
-        <h1 class="main-title" >Activités Réalisées</h1>
+  <h2 class="main-title" >Activités Réalisées</h2>
         <h2>Province du Sud-Kivu: <span>Territoire de Kabare</span></h2>
         <div class="activities">
           <div class="activity act-1">
             <h4>1. Eau, Hygiène et Assainissement</h4>
             <img
               src="/images/galleries/p-famille-cikumbo.png"
-              alt="Famille a Cikumbo"
+              alt="Sensibilisation ALDIV à Cikumbo sur la prévention des maladies hydriques, famille bénéficiaire"
             />
             <p>
               Sensibilisation sur la prévention et la lutte contre les maladies
@@ -165,11 +184,11 @@
             <div class="img-container">
               <img
                 src="/images/galleries/p-famille-ishungu-1.png"
-                alt="Famille d’Ishungu 1"
+                alt="Distribution d'aquatabs à Ishungu, bénéficiaire ALDIV 1"
               />
               <img
                 src="/images/galleries/p-famille-ishungu-2.png"
-                alt="Famille d’Ishungu 2"
+                alt="Distribution d'aquatabs à Ishungu, bénéficiaire ALDIV 2"
               />
             </div>
 
@@ -185,11 +204,11 @@
             <div class="img-container">
               <img
                 src="/images/galleries/p-nature-1.png"
-                alt="Exemple 1 de la nature"
+                alt="Pépinière agroforestière ALDIV, nature à Kabare"
               />
               <img
                 src="/images/galleries/p-nature-2.png"
-                alt="Exemple 2 de la nature"
+                alt="Plantules prêtes pour repiquage, ALDIV Kabare"
               />
             </div>
             <p>
@@ -207,18 +226,18 @@
             </ul>
             <img
               src="/images/galleries/p-culture-1.png"
-              alt="Exemple culture 1"
+              alt="Préparation du terrain pour cultures vivrières, ALDIV"
             />
             <p>Préparation du terrain d’Aldiv pour les cultures vivrières</p>
             <hr />
             <div class="img-container">
               <img
                 src="/images/galleries/p-culture-2.png"
-                alt="Exemple culture 2"
+                alt="Culture de tomates, ALDIV Luhihi"
               />
               <img
                 src="/images/galleries/p-culture-3.png"
-                alt="Exemple culture 3"
+                alt="Récolte de tomates, ALDIV Luhihi"
               />
             </div>
             <p>Récolte des tomates au champ d’ALDIV à Luhihi</p>
@@ -232,14 +251,14 @@
               cette contrée à cause de la précarité socioéconomique des ménages
               incapables d'envoyer leurs enfants à l'école
             </h5>
-            <img src="/images/galleries/p-mine-3.png" alt="" />
+            <img src="/images/galleries/p-mine-3.png" alt="Enfants travaillant dans une briqueterie à Luhihi, ALDIV" />
             <p>Enfants travaillant dans une briqueterie à Luhihi</p>
             <hr />
             <div class="img-container">
               <figure>
                 <img
                   src="/images/galleries/p-mine-1.png"
-                  alt="A description of the image"
+                  alt="Enfants exploitants artisanaux d’Or à Luhihi, ALDIV"
                 />
                 <figcaption>
                   Enfants exploitants artisanaux d’Or à Luhihi
@@ -249,7 +268,7 @@
               <figure>
                 <img
                   src="/images/galleries/p-mine-4.png"
-                  alt="A description of the image"
+                  alt="Grotte servant d’habitation aux enfants creuseurs d’or à Luhihi, ALDIV"
                 />
                 <figcaption>
                   Grotte servant d’habitation aux enfants creuseurs d’or à
@@ -279,7 +298,7 @@
       </section>
 
       <section id="Galleries" class="galleries-section">
-        <h1 class="main-title">Galleries</h1>
+  <h2 class="main-title">Galleries</h2>
         <ul class="images"></ul>
         <div class="voir-plus d-flex flex-center">
           <button type="submit">
@@ -404,7 +423,7 @@
     <footer>
       <div id="socials-links">
         <div id="socials">
-          <h1>ALDIV</h1>
+          <h2>ALDIV</h2>
 
           <ul>
             <li>
@@ -416,9 +435,6 @@
               <a href="https://twitter.com/AldivAsbl" target="_blank"
                 ><i class="fa fa-twitter"></i
               ></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
             </li>
             <li>
               <a href="https://instagram.com/aldiv.rdc" target="_blank"
@@ -439,14 +455,21 @@
         </div>
       </div>
       <hr />
-      <p>
-        &copy Copyright <b>ALDIV</b>. All Rights Reserved<br />
-        Designed by
+      <p>Concu par
         <a href="https://github.com/ABCIncs" target="_blank">ABC Incs</a><br />
       </p>
+      <div class="footer-bottom">
+        &copy; <span id="footer-year-bottom"></span> ALDIV. Tous droits réservés.
+        <a href="#Accueil" class="back-to-top">Retour en haut &uarr;</a>
+      </div>
     </footer>
     <script src="/js/galleries.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/validation.js"></script>
+      <script>
+      // Set current year in footer
+      const year = new Date().getFullYear();
+      document.getElementById('footer-year-bottom').textContent = year;
+    </script>
   </body>
 </html>
