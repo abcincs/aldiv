@@ -2,6 +2,16 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
+:root {
+  --main-color: rgba(1, 50, 255, 1);
+  --main-black: rgba(0, 0, 0, 1);
+  --main-white: rgba(255, 255, 255, 1);
+  --main-orange: rgba(255, 165, 0, 1);
+  --footer-bg: #071527;
+  --activity-bg: #f9fafc;
+}
+
+
 html {
 	scroll-behavior: smooth;
 }
@@ -521,7 +531,6 @@ hr {
 /* Images grid matches publications-section width */
 .galleries-section .images {
 	display: grid;
-	background: red;
 	width: 90%;
 	margin: 0 auto 2.5rem auto;
 	grid-template-columns: repeat(1, 1fr);
@@ -774,7 +783,7 @@ footer p a:hover {
 #calling,
 #messaging {
 	padding: 1.8rem;
-	background-color: var(--main-white);
+  background-color: #f3f6fa;
 	border-radius: 20px;
 	text-align: center;
 }
