@@ -429,14 +429,21 @@
         </div>
       </div>
       <hr />
-      <p>
-        &copy Copyright <b>ALDIV</b>. All Rights Reserved<br />
-        Designed by
+      <p>Concu par
         <a href="https://github.com/ABCIncs" target="_blank">ABC Incs</a><br />
       </p>
+      <div class="footer-bottom">
+        &copy; <span id="footer-year-bottom"></span> ALDIV. Tous droits réservés.
+        <a href="#Accueil" class="back-to-top">Retour en haut &uarr;</a>
+      </div>
     </footer>
     <script src="/js/galleries.js"></script>
     <script src="/js/menu.js"></script>
-    <!-- <script src="/js/validation.js"></script> -->
+    <script src="/js/validation.js"></script>
+      <script>
+      // Set current year in footer
+      const year = new Date().getFullYear();
+      document.getElementById('footer-year-bottom').textContent = year;
+    </script>
   </body>
 </html>
