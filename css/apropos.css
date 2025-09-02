@@ -1,0 +1,115 @@
+@import "colors.css";
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+.apropos-section {
+  width: 100%;
+  padding: 30px 10px 15px;
+  margin: auto;
+  background-color: #e0e9f0;
+  font-family: 'Lato', sans-serif;
+}
+.apropos-section .container {
+  width: 95%;
+  margin: auto; 
+}
+
+.historique h2::after {
+  content: " ";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 14px auto 0;
+  background-color: var(--main-yellow);
+
+}
+
+.historique p {
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 30px;
+  margin: 15px 0;
+}
+
+.apropos-section .objectifs-domaines {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 14px;
+  margin-bottom: 27px;
+}
+
+.objectifs-domaines li {
+  width: 97%;
+  min-height: 110px;
+  justify-self: center;
+  justify-content: space-around;
+  background-color: #eceef2;
+  color: var(--main-black);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.objectifs-domaines li h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--main-color);
+  padding: 6px;
+  flex-wrap: wrap;
+}
+
+.objectifs-domaines li p {
+  width: 100%;
+  color: var(--main-black);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .accueil-section {
+    padding-left: 14%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .apropos-section .container {
+    width: 70%;
+  }
+  .objectifs-domaines li {
+    justify-self: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .apropos-section .objectifs-domaines {
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  .objectifs-domaines li h3 {
+    width: 100%;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+  }
+
+  .objectifs-domaines li p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .historique p { 
+    font-size: 1.4rem;
+  }
+}
