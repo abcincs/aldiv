@@ -234,39 +234,42 @@ data.forEach((info) => {
   imageContainer.appendChild(card);
 });
 
-const imageList = document.querySelectorAll('#Galleries .images li');
+const imageList = () => document.querySelectorAll('#Galleries .images li');
 const moreBtn = document.querySelector('#Galleries button');
 const btnSpan = document.querySelector('#Galleries button span');
 const btnIcon = document.querySelector('#Galleries button i');
 
-let showLessImages = false;
+let showingAll = false;
+const INITIAL_VISIBLE = 6;
 
-// Function to display more or less data "images"
-// when user click to the "Voir Plus" button all images display and the button change to "Voir Moins" when user click to the "Voir Moins" button only six images display
-function showMoreImages() {
-  if (!showLessImages) {
-    imageList.forEach((images) => {
-      images.style.display = 'flex';
-    });
-    btnSpan.textContent = 'Voir Moins';
-    btnIcon.classList.remove('fa', 'fa-chevron-down');
-    btnIcon.classList.add('fa', 'fa-chevron-up');
-
-      showLessImages = true;
-  } else {
-    imageList.forEach((images) => {
-      images.style.display = 'none';
-    });
-    for (let i = 0; i <= 5; i++) {
-        imageList[i].style.display = 'flex';
+function updateGalleryView() {
+  const images = imageList();
+  images.forEach((img, idx) => {
+    if (!showingAll && idx >= INITIAL_VISIBLE) {
+      img.classList.add('hidden');
+    } else {
+      img.classList.remove('hidden');
     }
-
+  });
+  if (showingAll) {
+    btnSpan.textContent = 'Voir Moins';
+    btnIcon.classList.remove('fa-chevron-down');
+    btnIcon.classList.add('fa-chevron-up');
+    moreBtn.setAttribute('aria-expanded', 'true');
+  } else {
     btnSpan.textContent = 'Voir Plus';
-    btnIcon.classList.remove('fa', 'fa-chevron-up');
-    btnIcon.classList.add('fa', 'fa-chevron-down');
-    showLessImages = false;
+    btnIcon.classList.remove('fa-chevron-up');
+    btnIcon.classList.add('fa-chevron-down');
+    moreBtn.setAttribute('aria-expanded', 'false');
   }
 }
 
-moreBtn.addEventListener('click', showMoreImages);
+function toggleGalleryImages() {
+  showingAll = !showingAll;
+  updateGalleryView();
+}
+
+// Initial state
+document.addEventListener('DOMContentLoaded', updateGalleryView);
+moreBtn.addEventListener('click', toggleGalleryImages);
   
